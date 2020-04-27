@@ -16,7 +16,7 @@ import { connect } from 'react-redux';
 import { postAsk, clearErrors } from '../../redux/actions/dataActions';
 
 const styles = (theme) => ({
-  ...theme,
+  ...theme.spreadThis,
   submitButton: {
     position: 'relative',
     float: 'right',

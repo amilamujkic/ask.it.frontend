@@ -16,7 +16,7 @@ import { connect } from 'react-redux';
 import { loginUser } from '../redux/actions/userActions';
 
 const styles = (theme) => ({
-    ...theme
+    ...theme.spreadThis
   });
 
 class login extends Component {

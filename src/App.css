@@ -5,12 +5,12 @@ body {
     sans-serif;
   background-color: rgb(0, 0, 128);
 }
-.nav-container {
-  margin: auto;
-}
 .container {
   margin: 80px auto 0 auto;
   max-width: 1200px;
+}
+.nav-container {
+  margin: auto;
 }
 .nav-container svg {
   color: #000000;

@@ -7,7 +7,7 @@ import Profile from '../components/profile/Profile';
 import AskSkeleton from '../util/AskSkeleton';
 
 import { connect } from 'react-redux';
-import { getScreams } from '../redux/actions/dataActions';
+import { getAsks } from '../redux/actions/dataActions';
 
 class home extends Component {
   componentDidMount() {
@@ -18,7 +18,7 @@ class home extends Component {
     let recentAsksMarkup = !loading ? (
       asks.map((ask) => <Ask key={ask.askId} ask={ask} />)
     ) : (
-      <Askskeleton />
+      <AskSkeleton />
     );
     return (
       <Grid container spacing={16}>

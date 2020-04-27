@@ -20,7 +20,7 @@ class Navbar extends Component {
         <Toolbar className="nav-container">
           {authenticated ? (
             <Fragment>
-              <PostScream />
+              <PostAsk />
               <Link to="/">
                 <MyButton tip="Home">
                   <HomeIcon />

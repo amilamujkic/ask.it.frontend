@@ -15,7 +15,7 @@ import { connect } from 'react-redux';
 import { signupUser } from '../redux/actions/userActions';
 
 const styles = (theme) => ({
-  ...theme
+  ...theme.spreadThis
 });
 
 class signup extends Component {
@@ -65,7 +65,7 @@ class signup extends Component {
         <Grid item sm>
           <img src={AppIcon} alt="ask" className={classes.image} />
           <Typography variant="h2" className={classes.pageTitle}>
-            SignUpmonkey
+            SignUp
           </Typography>
           <form noValidate onSubmit={this.handleSubmit}>
             <TextField

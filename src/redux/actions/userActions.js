@@ -86,8 +86,18 @@ export const uploadImage = (formData) => (dispatch) => {
       })
       .catch((err) => console.log(err));
   };
-  
 
+  export const markNotificationsRead = (notificationIds) => (dispatch) => {
+    axios
+      .post('/notifications', notificationIds)
+      .then((res) => {
+        dispatch({
+          type: MARK_NOTIFICATIONS_READ
+        });
+      })
+      .catch((err) => console.log(err));
+  };
+  
 const setAuthorizationHeader = (token) => {
     const FBIdToken = `Bearer ${token}`;
     localStorage.setItem('FBIdToken', FBIdToken);

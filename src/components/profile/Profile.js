@@ -22,7 +22,7 @@ import { connect } from 'react-redux';
 import { logoutUser, uploadImage } from '../../redux/actions/userActions';
 
 const styles = (theme) => ({
-  ...theme
+  ...theme.spreadThis
 });
 
 class Profile extends Component {

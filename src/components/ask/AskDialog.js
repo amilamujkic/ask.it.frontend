@@ -19,10 +19,10 @@ import UnfoldMore from '@material-ui/icons/UnfoldMore';
 import ChatIcon from '@material-ui/icons/Chat';
 // Redux stuff
 import { connect } from 'react-redux';
-import { getScream, clearErrors } from '../../redux/actions/dataActions';
+import { getAsk, clearErrors } from '../../redux/actions/dataActions';
 
 const styles = (theme) => ({
-  ...theme,
+  ...theme.spreadThis,
   profileImage: {
     maxWidth: 200,
     height: 200,

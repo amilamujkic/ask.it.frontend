@@ -21,6 +21,8 @@ import user from './pages/user';
 
 import axios from 'axios';
 
+axios.defaults.baseURL = 'https://europe-west3-askit-ad0e8.cloudfunctions.net/api';
+
 const theme = createMuiTheme(themeObject);
 
 const token = localStorage.FBIdToken;
